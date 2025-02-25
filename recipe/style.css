@@ -1,0 +1,40 @@
+
+@import url(https://fonts.google.com/specimen/Fredoka);
+
+body{
+background-color: white;
+
+}
+h1 { 
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 75px;
+    color: black;
+    width: 600px;
+    text-align: center;
+    border:solid 3px;
+    padding: 10px;
+    margin: 25px auto;
+}
+
+h3,h2 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    width: 600px ;
+
+
+
+}
+
+
+ul,ol,li,p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:xx-large
+
+}
+
+img {
+    width: 1000px; 
+    border-radius: 50px;
+}
