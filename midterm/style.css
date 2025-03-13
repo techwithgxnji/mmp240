@@ -1,0 +1,23 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#wrapper{
+    width:1200px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+header{
+    padding: 2em 2em;
+    padding-top: 9em;
+    background:
+   url("images/mysticforce.jpg") no-repeat right top/cover;
+  
+}
+
+
+.lead{
+    color:aliceblue;
+    width: 300px;
+}
