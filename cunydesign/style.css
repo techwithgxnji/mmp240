@@ -1,6 +1,23 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1200px;
+    margin:10px;
 }
+
+.btn{
+    color:#fff;
+    background-color: blue;
+    text-decoration:none;
+    padding: 0.5em 1em;
+    border-radius:10px;
+    display:inline-block;
+}
+
+.articleone{
+    background-color: #AF86F1;
+    padding:10px;
+}
+
 h1{
     font-size: 1rem;
     text-transform: uppercase;
@@ -8,24 +25,17 @@ h1{
 
 
 header{
+    position:relative;   
     display:flex;
     justify-content: space-between;
     align-items: center;
 } 
-
-nav li{ 
-      padding:0;
-      list-style-type:none;
-      margin:0;
-  }
-
 
    nav ul{
     padding:0;
     margin:0;
     list-style-type: none;
   }
-     
 
 #top-nav{
     display:none;
@@ -34,7 +44,8 @@ nav li{
     top:50px;
     border:solid 1px black;
     padding:10px;
-    z-index: 100;
+    z-index: 100;background-color: #fff;
+
 }
 
 #top-nav ul{
@@ -51,6 +62,7 @@ nav li{
 
 }
 
+
 #top-nav input{
      display:block;
      margin:10px 5px;
@@ -61,13 +73,15 @@ nav li{
 }
 
 .dropdown a{
+    display: block;
     text-decoration: none;
     color:white;
+    padding:5px;
 }
 
 .dropdown li a{
     color:black;
-    display: block;
+    display:block;
 }
 
 .dropdown li a:hover{
@@ -77,13 +91,209 @@ nav li{
 
 .dropdown{
     background-color: darkgray;
+    width: 32%;
+    border-radius:10px;
+
 }
+
+.programs-nav {
+    padding:20px;
+    border-radius:20px;
+    border-style: solid;
+ }
 
 .dropdown ul{
     background-color: white;
     display:none;
+    border-radius: 10px;
+    padding:3px;
 }
 
 .dropdown:hover ul{
 display:block;
 }
+
+.dropdown:hover {
+    border-radius: 10px 10px 0 0;
+    }
+h1{
+    font-size:1rem;
+    text-transform: uppercase;
+}
+
+h1 a{
+    text-decoration: none;
+    color:#000;
+}
+
+h3{
+font-size: 14px;
+font-weight: 400;
+}
+
+section h2{
+    font-size:1rem;text-transform: uppercase;
+
+}
+
+article h3{
+    font-size: 1rem;
+
+}
+
+article{
+    color:#000;
+    margin-bottom:3em;
+}
+
+
+article img{
+    max-width:100%;
+}
+
+.hero h3 {font-size:1rem;
+}
+
+.hero{
+    background: url("pictures/queens college.webp") no-repeat center;
+    background-size:cover;
+    padding: 4em 2em;
+    color:white;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.hero p{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding:1em;
+}
+
+.responsive-img{
+    max-width:100%;
+}
+
+
+/*media query*/
+
+@media (min-width:768px){
+    
+.material-symbols-outlined{
+    display:none;
+}
+
+#top-nav{
+    display:flex;
+    align-items: center;
+    position:static;
+    border:none;
+}
+
+#top-nav ul{
+    display:flex;
+    align-items: center;
+}
+
+#top-nav li{
+    margin:0 1em;
+
+}
+
+.programs-menu{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown{
+    width:32%;
+}
+
+.dropdown:hover{
+border-radius: 10px 10px 0 0;
+}
+
+.dropdown ul{
+    position:absolute;
+    width:32%;
+}
+
+
+
+/* main grid*/
+
+.home main{
+   display:grid;
+   grid-template-columns: minmax(500px, 1fr) 300px;
+   grid-gap: 2em;
+   
+}
+
+.card{
+    border:solid 5px grey;
+    border-radius: 10px;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+
+.card-body{
+    width: 280px;
+}
+
+.card-body p{
+    width:280px;
+}
+
+.card-body h3{
+    font-size: 16px;
+}
+
+.card img{
+    border-radius: 5px;
+}
+
+
+.card h3{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.card h2{
+    font-size: 1.5em;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 5px #000;
+
+}
+
+.responsive-img{
+    width:100%;
+}
+
+.no-underline{
+    text-decoration: none;
+}
+
+.c-black{
+    color: #000;
+}
+
+.card h2{
+    font-size: 1.6rem;
+}
+
+.program-cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1em;
+}
+
+/* event image */
+
+.img {
+    width:280px;
+}
+
+}
+/* program menu for larger screens */
